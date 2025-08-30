@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyMate - Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f7fa; }
+    header { background:#4CAF50; color:white; padding:15px; text-align:center; }
+    nav { background:#333; display:flex; justify-content:center; }
+    nav a { color:white; padding:14px 20px; text-decoration:none; }
+    nav a:hover { background:#575757; }
+    .container { padding:20px; text-align:center; }
+    .features { display:flex; justify-content:space-around; margin-top:30px; flex-wrap:wrap; }
+    .card { background:white; padding:20px; width:250px; margin:10px;
+            border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+    .card h3 { color:#4CAF50; }
+    footer { background:#333; color:white; text-align:center; padding:10px; margin-top:30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 StudyMate</h1>
+    <p>Your Personal Learning Companion</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="notes.html">Notes</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Welcome to StudyMate!</h2>
+    <p>Boost your learning with study materials, notes, and smart tools.</p>
+
+    <div class="features">
+      <div class="card">
+        <h3>📖 Notes</h3>
+        <p>Get access to well-structured notes for all subjects.</p>
+      </div>
+      <div class="card">
+        <h3>📝 Practice</h3>
+        <p>Take quizzes and solve practice questions to prepare better.</p>
+      </div>
+      <div class="card">
+        <h3>🤝 Collaboration</h3>
+        <p>Connect with friends and study together effectively.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 StudyMate | Designed by You ✨</p>
+  </footer>
+</body>
+</html>
+!DOCTYPE html>
+<html>
+<head>
+  <title>StudyMate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📖 StudyMate</h1>
+    <p>Your personal study companion</p>
+  </header>
+
+  <main>
+    <section class="flashcards">
+      <h2>Flashcards</h2>
+      <div class="card">Sample Question</div>
+      <button>Next Card</button>
+    </section>
+
+    <section class="todo">
+      <h2>To-Do List</h2>
+      <input type="text" placeholder="Add a task...">
+      <button>Add</button>
+      <ul>
+        <li>Example Task ✖</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyMate - Practice Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f5f7fa; margin:0; padding:20px; }
+    header { background:#4CAF50; color:white; padding:20px; text-align:center; }
+    h2 { color:#333; }
+    .question { 
+      background:white; 
+      padding:15px; 
+      margin:15px 0; 
+      border-radius:8px; 
+      box-shadow:0 3px 6px rgba(0,0,0,0.1); 
+    }
+    button { 
+      background:#4CAF50; 
+      color:white; 
+      border:none; 
+      padding:10px 15px; 
+      cursor:pointer; 
+      border-radius:5px; 
+    }
+    button:hover { background:#45a049; }
+    a { display:block; margin-top:20px; text-decoration:none; color:#4CAF50; }
+    a:hover { text-decoration:underline; }
+  </style>
+  <script>
+    // Simple answer checking
+    function checkAnswer(q, correct) {
+      let ans = document.querySelector(input[name="q${q}"]:checked);
+      if(ans) {
+        if(ans.value === correct) {
+          alert("✅ Correct!");
+        } else {
+          alert("❌ Wrong. Try again!");
+        }
+      } else {
+        alert("⚠️ Please select an answer!");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>📝 Practice Questions</h1>
+    <p>Test your knowledge with quick quizzes</p>
+  </header>
+
+  <section>
+    <div class="question">
+      <h2>1. What is 5 + 7 ?</h2>
+      <input type="radio" name="q1" value="10"> 10 <br>
+      <input type="radio" name="q1" value="12"> 12 <br>
+      <input type="radio" name="q1" value="14"> 14 <br>
+      <button onclick="checkAnswer(1,'12')">Check Answer</button>
+    </div>
+
+    <div class="question">
+      <h2>2. Water’s chemical formula is?</h2>
+      <input type="radio" name="q2" value="CO2"> CO₂ <br>
+      <input type="radio" name="q2" value="H2O"> H₂O <br>
+      <input type="radio" name="q2" value="O2"> O₂ <br>
+      <button onclick="checkAnswer(2,'H2O')">Check Answer</button>
+    </div>
+
+    <div class="question">
+      <h2>3. Who is known as the Father of History?</h2>
+      <input type="radio" name="q3" value="Plato"> Plato <br>
+      <input type="radio" name="q3" value="Herodotus"> Herodotus <br>
+      <input type="radio" name="q3" value="Aristotle"> Aristotle <br>
+      <button onclick="checkAnswer(3,'Herodotus')">Check Answer</button>
+    </div>
+  </section>
+
+  <!-- Link back to Home -->
+  <a href="index.html">← Back to Home</a>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyMate - Notes</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f7fa; }
+    header { background:#4CAF50; color:white; padding:15px; text-align:center; }
+    nav { background:#333; display:flex; justify-content:center; }
+    nav a { color:white; padding:14px 20px; text-decoration:none; }
+    nav a:hover { background:#575757; }
+    .container { padding:20px; }
+    .note { background:white; padding:15px; margin:10px 0; border-radius:5px;
+            box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+    .note h3 { color:#4CAF50; }
+    footer { background:#333; color:white; text-align:center; padding:10px; margin-top:30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 StudyMate - Notes</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="notes.html">Notes</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Available Notes</h2>
+    <div class="note">
+      <h3>Mathematics</h3>
+      <p>Algebra, Geometry, and Calculus summaries for quick revision.</p>
+    </div>
+    <div class="note">
+      <h3>Science</h3>
+      <p>Physics, Chemistry, and Biology notes with diagrams.</p>
+    </div>
+    <div class="note">
+      <h3>History</h3>
+      <p>Key events, timelines, and important personalities explained simply.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 StudyMate | Designed by You ✨</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyMate - Collaboration</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:20px; background:#f5f7fa; }
+    header { background:#4CAF50; color:white; padding:20px; text-align:center; border-radius:8px; }
+    h2 { color:#333; }
+    .chat-box {
+      background:white; padding:15px; margin:20px auto;
+      border-radius:8px; box-shadow:0 3px 6px rgba(0,0,0,0.1);
+      width:80%; max-width:600px; min-height:200px;
+      overflow-y:auto;
+    }
+    .message { background:#e6ffe6; padding:10px; margin:8px 0;
+               border-radius:5px; }
+    input, button {
+      padding:10px; border-radius:5px; border:1px solid #ccc;
+    }
+    button {
+      background:#4CAF50; color:white; border:none; cursor:pointer;
+    }
+    button:hover { background:#45a049; }
+    .input-area { margin-top:15px; display:flex; gap:10px; justify-content:center; }
+    a { display:block; margin-top:20px; text-align:center; color:#4CAF50; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+  <script>
+    function sendMessage() {
+      let input = document.getElementById("msgInput");
+      let text = input.value.trim();
+      if(text !== "") {
+        let chatBox = document.getElementById("chatBox");
+        let msg = document.createElement("div");
+        msg.className = "message";
+        msg.textContent = text;
+        chatBox.appendChild(msg);
+        input.value = "";
+        chatBox.scrollTop = chatBox.scrollHeight; // auto-scroll
+      } else {
+        alert("⚠️ Please type a message before sending.");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>🤝 StudyMate Collaboration</h1>
+    <p>Discuss, share, and learn together!</p>
+  </header>
+
+  <div class="chat-box" id="chatBox">
+    <p><em>Welcome to the collaboration space! Start posting your ideas below 👇</em></p>
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="msgInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div> link -->
+  <a href="index.html">← Back to Home</a>
+
+</body>
+</html>
+
+  <!-- Back
